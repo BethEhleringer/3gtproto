@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CMS - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+
+</head>
+
+<body>
+	<div class="container hidden">
+		<div class="row top-30">
+			<div class="col-md-2 col-sm-2">
+				<a class="btn btn-light" href="/blog">Go to Blog</a>
+			</div>
+			<div class="col-md-2 col-sm-2">
+				<a class="btn btn-light" href="/members">Manage Members</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<form id="cms">
+					<div class="form-group">
+						<label for="title">Title:</label>
+						<input placeholder="Report Title" type="text" class="form-control" id="title">
+						<br />
+						<!--spiritual health question-->
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col-sm-4">
+									<label for="persspir-input">Spiritual Health</label>
+								</div>
+								<div class="col-sm-8">
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="pers_spir"
+											id="persspir-input-1" value=1 />
+										<label class="form-check-label" for="persspir-input-1">1</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="pers_spir"
+											id="persspir-input-2" value=2 />
+										<label class="form-check-label" for="persspir-input-2">2</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="pers_spir"
+											id="persspir-input-3" value=3 />
+										<label class="form-check-label" for="persspir-input-3">3</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="pers_spir"
+											id="persspir-input-4" value=4 />
+										<label class="form-check-label" for="persspir-input-4">4</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="pers_spir"
+											id="persspir-input-5" value=5 />
+										<label class="form-check-label" for="persspir-input-5">5</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--marriage question-->
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col-sm-4">
+									<label for="marriageInput">Marriage</label>
+								</div>
+								<div class="col-sm-8">
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="marriage" id="marriage-1"
+											value=1 />
+										<label class="form-check-label" for="marriage-1">1</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="marriage" id="marriage-2"
+											value=2 />
+										<label class="form-check-label" for="marriage-2">2</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="marriage" id="marriage-3"
+											value=3 />
+										<label class="form-check-label" for="marriage-3">3</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="marriage" id="marriage-4"
+											value=4 />
+										<label class="form-check-label" for="marriage-4">4</label>
+									</div>
+									<div class="checkbox-inline">
+										<input class="form-check-input" type="radio" name="marriage" id="marriage-5"
+											value=5 />
+										<label class="form-check-label" for="marriage-5">5</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end marriage question-->
+						<!--emot health question-->
+
+						<div class="form-group">
+							<label for="persemot-input">Emotional</label>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_emot" id="persemot-input-1"
+									value=1 />
+								<label class="form-check-label" for="persemot-input-1">1</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_emot" id="persemot-input-2"
+									value=2 />
+								<label class="form-check-label" for="persemot-input-2">2</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_emot" id="persemot-input-3"
+									value=3 />
+								<label class="form-check-label" for="persemot-input-3">3</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_emot" id="persemot-input-4"
+									value=4 />
+								<label class="form-check-label" for="persemot-input-4">4</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_emot" id="persemot-input-5"
+									value=5 />
+								<label class="form-check-label" for="persemot-input-5">5</label>
+							</div>
+						</div>
+
+
+						<!--end emot health question-->
+						<!--phys health question-->
+						<div class="form-group">
+							<label for="persphys-input">Physical Health</label>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_phys" id="persphys-input-1"
+									value=1 />
+								<label class="form-check-label" for="persphys-input-1">1</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_phys" id="persphys-input-2"
+									value=2 />
+								<label class="form-check-label" for="persphys-input-2">2</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_phys" id="persphys-input-3"
+									value=3 />
+								<label class="form-check-label" for="persphys-input-3">3</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_phys" id="persphys-input-4"
+									value=4 />
+								<label class="form-check-label" for="persphys-input-4">4</label>
+							</div>
+							<div class="checkbox-inline">
+								<input class="form-check-input" type="radio" name="pers_phys" id="persphys-input-5"
+									value=5 />
+								<label class="form-check-label" for="persphys-input-5">5</label>
+							</div>
+						</div>
+						<!--end phys health question-->
+						<br />
+						<div class="form-group"><label for="body">Body:</label>
+							<textarea placeholder="Report Body" class="form-control" rows="10" id="body"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="category">Select Member:</label>
+							<select class="custom-select" id="member">
+							</select>
+						</div>
+						<br />
+						<button type="submit" class="btn btn-success submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Custom Script -->
+	<script src="js/cms.js" type="text/javascript"></script>
+
+</body>
+
+</html>
