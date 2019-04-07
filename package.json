@@ -1,7 +1,7 @@
 {
   "name": "post-author-joins",
   "version": "1.0.0",
-  "description": "",
+  "description": "User information and reports stored in MySQL database",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
